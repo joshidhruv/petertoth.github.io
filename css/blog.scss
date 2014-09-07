@@ -95,9 +95,7 @@
     font-weight: 300;
     display: block;
     border: none;
-    font-size: 3em;
     text-align: center;
-    border-left: 7px solid lightgray;
     
     a {
       color: darken(#428bca, 10%);
@@ -153,6 +151,11 @@
 
   margin-top: 50px;
   border-bottom: none;
+
+  .title {
+    font-size: 3em;
+    border-left: 7px solid lightgray;
+  }
 
   .next-previous {
     margin-top: 25px;
