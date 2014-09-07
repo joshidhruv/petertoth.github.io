@@ -1,0 +1,24 @@
+---
+---
+
+.no-js {
+  .nav {
+    display: none;
+  }
+
+  #navicon {
+    display: none;
+  }
+}
+
+.no-cssanimations {
+  * {
+    visibility: visible!important;
+  }
+}
+
+.no-rgba {
+  .small-nav {
+    background: black;
+  }
+}

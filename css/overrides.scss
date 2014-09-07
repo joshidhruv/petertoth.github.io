@@ -1,0 +1,45 @@
+---
+---
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+.navbar-collapse {
+  box-shadow: none;
+}
+
+@media only screen and (max-width : 930px) {
+  #interests .row .column {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width : 750px) {
+  .brand h1 { letter-spacing: 8px; }
+  #top .chevron .down { font-size: 12px }
+
+  .small-nav { display: block }
+
+  #sidr, #navicon { display: none }
+}
+
+@media only screen and (max-width : 630px) {
+  .brand h2 { margin-top: 15px; }
+}
+
+@media only screen and (max-width : 470px) {
+  .brand h2 { margin-top: 10px; }
+  #header .navigation ul li { font-size: 12px }
+}
+
+@media only screen and (max-width : 380px) {
+  .brand h1 { font-size: 1.4em }
+  .brand h2 { font-size: 0.7em }
+}

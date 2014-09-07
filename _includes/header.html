@@ -1,0 +1,74 @@
+<section class="navigation">
+  <div class="small-nav nav">
+    <ul>
+      <li>
+        <a class="introduction" href="#introduction">Introduction</a>
+      </li>
+
+      <li>
+        <a class="about" href="#about">Who I am</a>
+      </li>
+
+      <li>
+        <a class="interests" href="#interests">What I do</a>
+      </li>
+      
+      <li>
+        <a class="work" href="#work">What I've done</a>
+      </li>
+
+      <li>
+        <a class="contact" href="#contact">Contact</a>
+      </li>
+    </ul>
+    </ul>
+  </div>
+
+  <a id="navicon" class="animated fadeInLeft closed" href="#sidr"></a>
+
+  <div id="sidr" class="nav">
+    <ul>
+      <li>
+        <a class="introduction" href="#introduction">
+          <i class="fa fa-angle-up"></i>Introduction
+        </a>
+      </li>
+
+      <li>
+        <a class="about" href="#about">
+          <i class="fa fa-user"></i>Who I am
+        </a>
+      </li>
+
+      <li>
+        <a class="interests" href="#interests">
+          <i class="fa fa-code"></i>What I do
+        </a>
+      </li>
+      
+      <li>
+        <a class="work" href="#work">
+          <i class="fa fa-suitcase"></i>What I've done
+        </a>
+      </li>
+
+      <li>
+        <a class="contact" href="#contact">
+          <i class="fa fa-paper-plane"></i>Contact
+        </a>
+      </li>
+    </ul>
+
+    <div class="dash"></div>
+
+    <ul>
+      <li>
+        <a href="{{ "blog" || prepend: site.root }}"><i class="fa fa-book"></i>Blog</a>
+      </li>
+
+      <li>
+        <a href="{{ "blog/archives" || prepend: site.root }}"><i class="fa fa-archive"></i>Archives</a>
+      </li>
+    </ul>
+  </div>
+</section>

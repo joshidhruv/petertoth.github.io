@@ -1,0 +1,133 @@
+.tabloid {
+  display: table;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.transition {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.visible {
+  visibility: visible!important;
+}
+
+.concealed {
+  visibility: hidden;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}
+
+.opacity-5 {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+}
+
+.animation-delay-2 {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  ms-animation-delay: 2s;
+}
+
+.animation-delay-1-5 {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  ms-animation-delay: 1.5s;
+}
+
+.animation-delay-1 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  ms-animation-delay: 1s;
+}
+
+.animation-duration-2 {
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  ms-animation-duration: 2s;
+}
+
+.underlined {
+  padding-bottom: 1px;
+  border-bottom-width: 1.5px;
+  border-bottom-style: solid;
+}
+
+.heart {
+  margin: 0 5px;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before { content: "\f004"; }
+}
+
+.line-through {
+  &:after {
+    border: 1px solid lightgray;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+}
+
+.dash {
+  height: 1px;
+  width: 30px;
+  background: black;
+  margin: 20px auto;
+
+  @extend .tabloid;
+}
+
+.caret-top {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+    left: calc(50% - 30px);
+    border-bottom-color: inherit;
+  }
+}
+
+.dots {
+  @extend .tabloid;
+  margin: 20px auto 30px;
+
+  i {
+    margin-right: 10px;
+    font-size: 0.7em;
+    color: darken(whitesmoke, 5%);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

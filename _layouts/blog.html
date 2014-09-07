@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include blog/head.html %}
+
+  <body>
+    <div id="wrapper">
+      {% include blog/header.html %} 
+
+      <div class="content">
+        <div class="posts">
+          {{ content }}
+        </div>
+      </div>
+
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
