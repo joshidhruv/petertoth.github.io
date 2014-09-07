@@ -11,19 +11,16 @@ $(document).ready ->
   })
   
   $("#sidr a").click ->
-    klass = $(this).attr('class')
+    $('html, body').animate({ scrollTop: $("##{$(this).attr('class')}").offset().top }, 1500);
 
-    $("##{klass}").velocity "scroll", { duration: 1800, easing: "easeInOutElastic" }
     $.sidr 'close', 'sidr'
 
   $(".chevron .down").click ->
-    $("#about").velocity "scroll", { duration: 1300, easing: "easeInOutElastic" }
+     $('html, body').animate({ scrollTop: $("#about").offset().top }, 1500);
 
   mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
   if $("html").hasClass("cssanimations") and not mobile
-
-
     #'#about p', 'fadeInUp', '.column', 'fadeInUp', 
     #'.item', 'fadeInDown', '.bar', 'fadeInRight',
     #'.paperplane', 'bounceInDown', '#quote .content', 'fadeIn',
