@@ -20,22 +20,6 @@
   visibility: hidden;
 }
 
-.opacity-7 {
-  opacity: 0.7;
-  -moz-opacity: 0.7;
-  -khtml-opacity: 0.7;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-  filter: alpha(opacity=70);
-}
-
-.opacity-5 {
-  opacity: 0.5;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  filter: alpha(opacity=50);
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-}
-
 .animation-delay-2 {
   animation-delay: 2s;
   -webkit-animation-delay: 2s;
@@ -68,6 +52,14 @@
   ms-animation-duration: 2s;
 }
 
+.animation-duration-1 {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  ms-animation-duration: 1s;
+}
+
 .underlined {
   padding-bottom: 1px;
   border-bottom-width: 1.5px;
@@ -84,17 +76,6 @@
   &:before { content: "\f004"; }
 }
 
-.line-through {
-  &:after {
-    border: 1px solid lightgray;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 50%;
-  }
-}
-
 .dash {
   height: 1px;
   width: 30px;
@@ -102,19 +83,6 @@
   margin: 20px auto;
 
   @extend .tabloid;
-}
-
-.caret-top {
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -60px;
-    margin-left: auto;
-    margin-right: auto;
-    left: calc(50% - 30px);
-    border-bottom-color: inherit;
-  }
 }
 
 .dots {

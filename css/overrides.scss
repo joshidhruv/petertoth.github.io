@@ -1,12 +1,6 @@
 ---
 ---
 
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-}
-
 .icon-bar {
   background-color: white;
 }
@@ -28,15 +22,34 @@
   .small-nav { display: block }
 
   #sidr, #navicon { display: none }
+
+  * { 
+    visibility: visible!important;
+
+    -webkit-animation: none !important;
+    -webkit-animation-name: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+
+  #about img { width: 200px }
 }
 
 @media only screen and (max-width : 630px) {
   .brand h2 { margin-top: 15px; }
+  #footer ul li {
+    margin: 0 15px;
+    padding: 0 15px;
+    a i { font-size: 2.3em }
+  }
 }
 
 @media only screen and (max-width : 470px) {
   .brand h2 { margin-top: 10px; }
   #header .navigation ul li { font-size: 12px }
+  #introduction .chevron .down { font-size: 1em }
 }
 
 @media only screen and (max-width : 380px) {

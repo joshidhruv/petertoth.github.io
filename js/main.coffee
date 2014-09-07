@@ -10,13 +10,11 @@ $(document).ready ->
       $("#navicon").addClass "closed"
   })
   
-  $(".nav a").click ->
+  $("#sidr a").click ->
     klass = $(this).attr('class')
 
     $("##{klass}").velocity "scroll", { duration: 1800, easing: "easeInOutElastic" }
     $.sidr 'close', 'sidr'
-
-  $(".chevron div").fitText(14);
 
   $(".chevron .down").click ->
     $("#about").velocity "scroll", { duration: 1300, easing: "easeInOutElastic" }
@@ -24,6 +22,12 @@ $(document).ready ->
   mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
   if $("html").hasClass("cssanimations") and not mobile
+
+
+    #'#about p', 'fadeInUp', '.column', 'fadeInUp', 
+    #'.item', 'fadeInDown', '.bar', 'fadeInRight',
+    #'.paperplane', 'bounceInDown', '#quote .content', 'fadeIn',
+    #'#quote .icon', 'fadeInDown'
 
     animate = (animation) ->
       $(animation[0]).addClass("concealed").viewportChecker({
@@ -34,7 +38,7 @@ $(document).ready ->
     items = [
         ['#about p', 'fadeInUp'], ['.column', 'fadeInUp'], 
         ['.item', 'fadeInDown'], ['.bar', 'fadeInRight'],
-        ['.paperplane', 'bounceInDown'], ['#quote .content', 'fadeIn'],
+        ['.paperplane', 'bounceInDown'], ['#quote .container', 'fadeIn'],
         ['#quote .icon', 'fadeInDown']
       ]
 

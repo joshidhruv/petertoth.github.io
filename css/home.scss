@@ -2,19 +2,16 @@
 ---
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 @import "helpers";
 @import "bourbon/bourbon";
-@import "animate";
 @import "flaticon";
 @import "sidr";
 
 .small-nav {
   display: none;
-  background: rgba(1, 1, 1, 0.4);
+  background: rgba(1, 1, 1, 0.2);
   width: 100%;
-  position: fixed;
   z-index: 99999;
 
   ul {
@@ -26,7 +23,7 @@
       display: inline-block;
       text-transform: uppercase;
       padding: 10px 8px;
-      font-size: 9px;
+      font-size: 15px;
       
       a {
         color: white;
@@ -91,7 +88,7 @@
   z-index: 999;
 
   h1 {
-    letter-spacing: 1.7rem;
+    letter-spacing: 0.7em;
     font-size: 2.1em;
     text-shadow: 1px 1px 10px #3B3B3B;
     font-weight: 300;
@@ -137,6 +134,7 @@
   height: 100%;
   background: url(/images/mountain.jpg) repeat center center fixed;
   position: relative;
+  background-attachment:scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -155,7 +153,6 @@
 
     @extend .animation-delay-2;
     @extend .tabloid;
-    @extend .opacity-7;
 
     text-align: center;
     color: #D3D3D3; 
@@ -389,6 +386,8 @@ $lightgray: tint(#848484, 13%);
     margin-bottom: 18px;
     color: tint($gray, 30%);
 
+    @extend .animation-duration-1;
+
     i {
       font-size: 0.7em;
       color: tint($gray, 20%);
@@ -405,8 +404,6 @@ $lightgray: tint(#848484, 13%);
   background: whitesmoke;
   color: gray;
   text-align: center;
-
-  @extend .caret-top;
 
   h1 {
     div { display: inline-block; }
@@ -464,7 +461,7 @@ $lightgray: tint(#848484, 13%);
     font-size: 4em;
   }
 
-  .content {
+  .container {
     margin-top: 15px;
     text-transform: uppercase;
     font-size: 2em;
@@ -475,7 +472,6 @@ $lightgray: tint(#848484, 13%);
 
   .author {
     @extend .tabloid;
-    @extend .opacity-5;
 
     font-family: Georgia, sans-serif;
     font-size: 1.2em;
@@ -484,6 +480,11 @@ $lightgray: tint(#848484, 13%);
     letter-spacing: 2px;
     padding-top: 20px;
     border-top: 1px solid shade(lightgray, 15%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
   }
 }
 
