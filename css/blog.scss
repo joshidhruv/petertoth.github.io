@@ -7,7 +7,7 @@
 @import "bourbon/bourbon";
 @import "flaticon";
 
-.content {
+.container {
   padding-right: 25px;
   padding-left: 25px;
   margin-right: auto;
@@ -18,6 +18,7 @@
   padding: 25px 0 20px;
   background: whitesmoke;
   font-weight: 300;
+  @include background-image(linear-gradient(to left, #4776E6, #8E54E9));
 
   .brand {
     h1 {
@@ -28,14 +29,14 @@
       letter-spacing: 3px;
 
       a {
-        color: gray;
+        color: white;
 
         span {
-          color: shade(gray, 80%);
+          color: whitesmoke;
         }
 
         &:hover {
-          color: black;
+          color: tint(#4976E6, 30%);
         }
       }
     }
@@ -56,15 +57,15 @@
         &:last-of-type { margin-right: 0;padding-right: 0;border-right: none }
 
         a {
-          color: black;
+          color: white;
           padding-bottom: 2px;
-          border-bottom: 1px solid lightgray;
+          border-bottom: 1px solid tint(#4776E6, 40%);
 
           i {
             margin-right: 5px;
           }
 
-          &:hover { border-bottom: 1px solid black }
+          &:hover { border-bottom: 1px solid white }
         }
       }
     }
@@ -154,7 +155,6 @@
 
   .title {
     font-size: 3em;
-    border-left: 7px solid lightgray;
   }
 
   .next-previous {
@@ -179,6 +179,7 @@
 .comments {
   padding: 35px 0 50px;
   background: #F5F5F5;
+  border-top: 1px solid lightgray;
   border-bottom: 1px solid shade(whitesmoke, 4%);
 
   h1 {
