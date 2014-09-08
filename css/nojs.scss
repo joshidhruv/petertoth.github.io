@@ -16,7 +16,7 @@
 }
 
 .no-cssanimations {
-  * {
+  *:not(#introduction) {
     visibility: visible!important;
   }
 }

@@ -20,52 +20,20 @@
   visibility: hidden;
 }
 
-.animation-delay-0-7 {
-  animation-delay: 0.7s;
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  -o-animation-delay: 0.7s;
-  ms-animation-delay: 0.7s;
+@mixin delay($time) {
+  animation-delay: $time;
+  -webkit-animation-delay: $time;
+  -moz-animation-delay: $time;
+  -o-animation-delay: $time;
+  ms-animation-delay: $time;
 }
 
-.animation-delay-1 {
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  ms-animation-delay: 1s;
-}
-
-.animation-delay-1-5 {
-  animation-delay: 1.5s;
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  -o-animation-delay: 1.5s;
-  ms-animation-delay: 1.5s;
-}
-
-.animation-delay-2 {
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  ms-animation-delay: 2s;
-}
-
-.animation-duration-2 {
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  ms-animation-duration: 2s;
-}
-
-.animation-duration-1 {
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  ms-animation-duration: 1s;
+@mixin duration($time) {
+  animation-duration: $time;
+  -webkit-animation-duration: $time;
+  -moz-animation-duration: $time;
+  -o-animation-duration: $time;
+  ms-animation-duration: $time;
 }
 
 .underlined {

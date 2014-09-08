@@ -94,3 +94,11 @@ end
 desc "Commit and deploy _site/"
 task :commit_deploy => [:commit, :deploy] do
 end
+
+desc "everything"
+
+task :everything do
+  system 'jekyll build'
+  Rake::Task['minify'].invoke
+  Rake::Task['commit_deploy'].invoke
+end

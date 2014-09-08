@@ -98,35 +98,21 @@
     padding-left: 1em;
 
     @extend .tabloid;
-    @extend .animation-delay-0-7;
+
+    @include delay(0.7s);
   }
 
   h2 {
     opacity: 0.7;
     @extend .tabloid;
-    @extend .animation-delay-1;
+
+    @include delay(1s);
 
     color: shade(white, 20%);
     font-size: 1.2em;
     letter-spacing: 0.4em;
     margin-top: 1.2em;
     padding-left: 1em;
-  }
-
-  .air {
-    color: tint($green, 30%);
-    font-size: 25px;
-
-    i {
-      font-size: 0.9em;
-      color: tint($green, 50%);
-    }
-
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    -ms-animation-delay: 2s;
   }
 }
 
@@ -146,13 +132,12 @@
   text-align: center;
   overflow: hidden;
 
-
   .chevron {
     position: absolute;
     bottom: 3%;
     width: 100%;
 
-    @extend .animation-delay-2;
+    @include delay(2s);
     @extend .tabloid;
 
     text-align: center;
@@ -207,11 +192,7 @@
   }
 
   .dash {
-    -webkit-animation-duration: 3.5s;
-    -moz-animation-duration: 3.5s;
-    -ms-animation-duration: 3.5s;
-    -o-animation-duration: 3.5s;
-    animation-duration: 3.5s;
+    @include duration(3.5s);
     background: lightgray;
   }
 
@@ -387,7 +368,7 @@ $lightgray: tint(#848484, 13%);
     margin-bottom: 18px;
     color: tint($gray, 30%);
 
-    @extend .animation-duration-1;
+    @include duration(1s);
 
     i {
       font-size: 0.7em;

@@ -23,9 +23,8 @@
 
   #sidr, #navicon { display: none }
 
-  * { 
+  #about *, #interests *, #work *, #contact *, #quote * {
     visibility: visible!important;
-
     -webkit-animation: none !important;
     -webkit-animation-name: none !important;
     -moz-animation: none !important;
