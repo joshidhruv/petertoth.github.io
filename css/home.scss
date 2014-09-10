@@ -92,7 +92,7 @@
     font-size: 2.1em;
     text-shadow: 1px 1px 10px #3B3B3B;
     font-weight: 300;
-    background: rgba(1, 1, 1, 0.06);
+    background: rgba(1, 1, 1, 0.1);
     padding: 0.3em;
     color: white;
     padding-left: 1em;
@@ -119,15 +119,8 @@
 #introduction {
   width: 100%;
   height: 100%;
-  background: url(/images/mountain.jpg) repeat center center fixed;
   position: relative;
-  background-attachment:scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/mountain.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/mountain.jpg', sizingMethod='scale')";
+  @include cover('mountain.jpg');
 
   text-align: center;
   overflow: hidden;
@@ -144,7 +137,7 @@
     color: #D3D3D3; 
 
     div {
-      font-size: 1.3rem;
+      font-size: 0.9em;
       text-transform: uppercase;
       letter-spacing: 3px;
     }
@@ -223,12 +216,18 @@
     color: gray;
     letter-spacing: 0.2em;
   }
+
+  .bold {
+    font-weight: 600;
+  }
   
   a {
     color: black;
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
 
     &:hover {
-      border-bottom: 1px solid black;
+      border-bottom: 1px dashed black;
     }
   }
 
@@ -249,10 +248,10 @@
   }
 
   h3 {
-    font-weight: 300;
-    color: black;
+    font-weight: 400;
+    color: shade(gray, 40%);
     letter-spacing: 0.2em;
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding-bottom: 10px;
   }
 
@@ -411,7 +410,7 @@ $lightgray: tint(#848484, 20%);
 
   a.contact {
     padding: 8px 15px;
-    border: 1px dotted tint(lightgray, 30%);
+    border: 1px solid lightgray;
     border-radius: 3px;
     font-size: 1.4em;
     font-weight: 300;
@@ -423,7 +422,7 @@ $lightgray: tint(#848484, 20%);
       font-size: 20px;
     }
 
-    &:hover { color: black; border: 1px solid gray }
+    &:hover { color: lightgray; background: gray; border: 1px solid gray }
   }
 
   .paperplane {
