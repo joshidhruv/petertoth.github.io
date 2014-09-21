@@ -6,7 +6,7 @@
 @import "helpers";
 @import "bourbon/bourbon";
 @import "flaticon";
-@import "sidr";
+@import "pushy";
 
 .small-nav {
   display: none;
@@ -72,6 +72,7 @@
 
     &:hover {
       color: shade(gray, 20%);
+      cursor: pointer;
     }
   }
 }

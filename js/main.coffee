@@ -2,18 +2,8 @@
 ---
 
 $(document).ready ->
-  $("#navicon").sidr({
-    onOpen: ->
-      $("#navicon").removeClass()
-    ,
-    onClose: ->
-      $("#navicon").addClass "closed"
-  })
-  
-  $("#sidr a").click ->
+  $(".nav ul li a").click ->
     $('html, body').animate({ scrollTop: $("##{$(this).attr('class')}").offset().top }, 1500);
-
-    $.sidr 'close', 'sidr'
 
   $(".chevron .down").click ->
      $('html, body').animate({ scrollTop: $("#about").offset().top }, 1500);
