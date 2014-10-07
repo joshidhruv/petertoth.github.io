@@ -37,7 +37,7 @@
 }
 
 @mixin cover($image) {
-  background: url('/images/#{$image}') repeat center center fixed;
+  background: url('/images/#{$image}') no-repeat center center scroll;
   position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
